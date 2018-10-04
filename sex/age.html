@@ -23,7 +23,25 @@
 </div>
 <br />
 <br />
-<div><img class="fullimg" src="../pic/sex.jpg"/></div>
+
+<p id="sex"></p>
+
+<script type="text/javascript">
+function getParams(key) {
+    var reg = new RegExp("(^|&)" + key + "=([^&]*)(&|$)");
+    var r = window.location.search.substr(1).match(reg);
+    if (r != null) {return unescape(r[2]);}
+    return null;
+};
+var s=getParams("sex");
+if (s=='M'){
+    text = "<div><img class='fullimg' src='../pic/M.png'/></div>";
+}
+if (s=='F'){
+    text = "<div><img class='fullimg' src='../pic/F.png'/></div>";
+}
+document.getElementById("sex").innerHTML = text;
+</script>
 <br />
 <br />
 <div align="center">
@@ -35,23 +53,7 @@
 <a href="age.html?sex=F" class="button button2">女</a>
 </div>
 
-<script type="text/javascript">
-    function getParams(key) {
-        var reg = new RegExp("(^|&)" + key + "=([^&]*)(&|$)");
-        var r = window.location.search.substr(1).match(reg);
-        if (r != null) {
-            return unescape(r[2]);
-        }
-        return null;
-    };
-    var s=getParams("sex");
-    if (s == 'M'){
-      <div><img class="fullimg" src="../pic/M.png"/></div>
-    }
-    if (s == 'M'){
-      <div><img class="fullimg" src="../pic/F.png"/></div>
-    }
-</script>
+
 
 </body>
 </html>
