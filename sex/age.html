@@ -34,5 +34,19 @@
 <div align="center">
 <a href="sex/age.html?sex=F" class="button button2">女</a>
 </div>
+
+<script type="text/javascript">
+    function getParams(key) {
+        var reg = new RegExp("(^|&)" + key + "=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) {
+            return unescape(r[2]);
+        }
+        return null;
+    };
+    console.log("sex:"+getParams("sex"));
+</script>
+
+
 </body>
 </html>
