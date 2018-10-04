@@ -31,17 +31,12 @@ function getParams(key) {
     if (r != null) {return unescape(r[2]);}
     return null;
 };
+var p="<div><img class='fullimg' src='../pic/"
 var s=getParams("sex");
-document.write("<div><img class='fullimg' src='../pic/"+s+".png'/></div>")
+var a=getParams("age");
+document.write(p+s+a+".png'/></div>")
 document.write("<br/><br/><div align='center'>")
-document.write("<a href='yao.html?sex="+s+"age=18' class='button button2'>少年：18岁以下</a>")
-document.write("</div><br/><br/><div align='center'>")
-document.write("<a href='yao.html?sex="+s+"age=30' class='button button2'>中年：18岁-50岁</a>")
-document.write("</div><br/><br/><div align='center'>")
-document.write("<a href='yao.html?sex="+s+"age=50' class='button button2'>壮年：50岁-70岁</a>")
-document.write("</div><br/><br/><div align='center'>")
-document.write("<a href='yao.html?sex="+s+"age=70' class='button button2'>老年：70岁以上</a>")
-document.write("</div><br/><br/><div align='center'>")
+document.write(p+s+a+"_yao.png'/></div>")
 </script>
 </div>
 </body>
