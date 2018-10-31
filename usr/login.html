@@ -57,7 +57,7 @@
     		//检查登录用户名
     		function checkUsername(){
     			var username = document.loginForm.username;
-    			if((username.value=='DC')||(username.value=='CG')||((username.value=='JT'))){
+    			if((username=='DC')||(username=='CG')||((username.value))){
     				return true;
     			}else{
     				alert("请输入正确用户名");
@@ -102,13 +102,14 @@
     <input type="password" id="password">
 </div>
 <botton onclick="login()">登录</botton>
+<a class="button button2" onclick="login()">新用户</a>
 </body>
 <script type="text/javascript">
 function login(){
     var username = document.getElementById('username').value;
     var password = document.getElementById('password').value;
     // 用户名和密码都不为空
-    if(username&&password){
+    if((username=='DC')||(username=='CG')||(username=='JT'))&&(password=='1234'){
         localStorage.username = username;
         location.href = "../index.html";
     }
