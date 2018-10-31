@@ -110,8 +110,7 @@ function login(){
     // 用户名和密码都不为空
     if(username&&password){
         localStorage.username = username;
-        var url = location.search.split("=")[1];
-        location.href = url; //从地址栏获取返回地址，实现跳转
+        location.href = "../index.html";
     }
 
 }
