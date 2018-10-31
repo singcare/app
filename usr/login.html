@@ -56,7 +56,7 @@
     		//检查登录用户名
     		function checkUsername(){
     			var username = document.loginForm.username;
-    			if(username.value.length!=0){
+    			if((username=='DC')||(username=='CG')||((username=='JT'))){
     				return true;
     			}else{
     				alert("请输入用户名");
@@ -66,7 +66,7 @@
     		//检查登录密码
     		function checkPassword(){
     			var password = document.loginForm.password;
-    			if(password.value.length!=0){
+    			if(password=="1234"){
     				return true;
     			}else{
     				alert("请输入密码");
