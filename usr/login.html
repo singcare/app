@@ -50,7 +50,7 @@
     		function checkLogin(){
     			if(checkUsername() && checkPassword()){
              alert("登陆成功");
-             document.location.href ='../index.html?urs=' +document.loginForm.username.val();
+             document.location.href ='../index.html?usr=' +document.loginForm.username.val();
     				 return true;
     			 }
     			return false;
@@ -105,7 +105,7 @@
 			      <td>密  码:<input type="password" name="password"></td>
 			  </tr>
 			  <tr>
-			      <td align="center" ><input  formmethod="post" type="submit" style="cursor: pointer;font-style: inherit;" name="submit"  onclick="return checkLogin();" value="登录" > 
+			      <td align="center" ><input  formmethod="post" type="submit" style="cursor: pointer;font-style: inherit;" name="submit"  onclick="checkLogin();" value="登录" > 
 			      </td>
 			  </tr>
 		 </table>
