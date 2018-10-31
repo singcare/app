@@ -49,6 +49,7 @@
         	//检查用户输入
     		function checkLogin(){
     			if(checkUsername() && checkPassword()){
+             alert("登陆成功");
              document.location.href ='../index.html?urs=' +document.loginForm.username.val();
     				 return true;
     			 }
