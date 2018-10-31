@@ -99,7 +99,7 @@
 密  &nbsp;码:<br>
 <input type="password" id="password">
 <br><br>
-<input type="submit" onclick="login()" value="登陆">
+<input type="submit" onclick="return login()" value="登陆">
 </form>
 </body>
 <script type="text/javascript">
@@ -110,7 +110,9 @@ function login(){
         localStorage.username = username;
         location.href = "../index.html";
         return true;
-    }else{return false;}
+    }else{
+      return false;
+    }
 }
 </script>
 
