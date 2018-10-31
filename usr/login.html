@@ -101,13 +101,12 @@
     <span>密  &nbsp;码：</span>
     <input type="password" id="password">
 </div>
-<botton class="button button2" onclick="login()">登录</botton>
+<botton onclick="login()">登录</botton>
 </body>
 <script type="text/javascript">
 function login(){
     var username = document.getElementById('username').value;
     var password = document.getElementById('password').value;
-    // 用户名和密码都不为空
     if((username=='DC')||(username=='CG')||(username=='JT'))&&(password=='1234'){
         localStorage.username = username;
         location.href = "../index.html";
