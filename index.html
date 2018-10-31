@@ -29,10 +29,30 @@
 <a href="usr/login.html" class="button button2">登陆</a>
 </div>
 
+<div>
+    <p>登录返回后下面显示你的登录用户名</p>
+    <p><botton onclick="login()">点击跳转登录</botton></p>
+    <p>当前用户名是：<span id="username"></span></p>
+</div>
+
 <br />
 <div align="center">
 <a href="sex/sex.html" class="button button2">新用户</a>
 </div>
 
 </body>
+<script type="text/javascript">
+var username = document.getElementById("username");
+window.onload = function(){
+    if(localStorage.username.length>1){
+        username.innerHTML = localStorage.username; //给标签加用户名
+    }
+}
+function login(){
+    // 构造返回链接
+    var returnUrl = "returnUrl=index.html";
+    var Url = "index.html" + "?" + returnUrl;
+    location.href = Url;
+}
+</script>
 </html>
