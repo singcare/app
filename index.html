@@ -31,7 +31,7 @@
 
 <div>
     <p>登录返回后下面显示你的登录用户名</p>
-    <p><botton button2 onclick="login()">点击跳转登录</botton></p>
+    <p><button button2 onclick="login()">点击跳转登录</button></p>
     <p>当前用户名是：<span id="username"></span></p>
 </div>
 
@@ -49,9 +49,7 @@ window.onload = function(){
     }
 }
 function login(){
-    // 构造返回链接
-    var returnUrl = "returnUrl=index.html";
-    var Url = "index.html" + "?" + returnUrl;
+    var Url = "usr/login.html";
     location.href = Url;
 }
 </script>
