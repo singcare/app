@@ -31,7 +31,7 @@
 
 <div align="center">
     <p><button class="button button2" onclick="login()">登录</button></p>
-    <p>当前用户名是：<span id="username"></span></p>
+    <p>当前用户：<span id="username"></span></p>
 </div>
 
 <br />
@@ -44,7 +44,9 @@
 var username = document.getElementById("username");
 window.onload = function(){
     if(localStorage.username.length>1){
-        username.innerHTML = localStorage.username; //给标签加用户名
+      if (localStorage.username=='DC') {username.innerHTML = "大川";}
+      if (localStorage.username=='CG') {username.innerHTML = "陈广";}
+      if (localStorage.username=='JT') {username.innerHTML = "军焘";}
     }
 }
 function login(){
