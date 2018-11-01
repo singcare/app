@@ -11,52 +11,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../pic/mystyle.css">
         <title>药不能停</title>
-        <script type="text/javascript">
-    	    //窗体改变大小时触发事件
-    		window.onresize = setViewSize;
-    		var marginLeft=0;
-    		var marginTop=0;
-    		//设置画布大小，登录页面显示在屏幕最中间
-    		function setViewSize() {
-    			//计算屏幕大小
-    			var w=window.innerWidth
-    			|| document.documentElement.clientWidth
-    			|| document.body.clientWidth;
-    			var h=window.innerHeight
-    			|| document.documentElement.clientHeight
-    			|| document.body.clientHeight;
-    			//设置登陆div的位置
-    			marginLeft = (w-468)/2;
-    			marginTop = (h-262)/2;
-    			document.getElementById("loginFormMain").style.marginLeft=marginLeft;
-    			document.getElementById("loginFormMain").style.marginTop=marginTop;
-    		}
-
-    		//默认聚焦在用户名输入框上
-    		function focusOnUsername() {
-    			//调整画布大小和登陆框位置
-    		    setViewSize();
-    			//默认聚焦在输入框上
-    			if (document.loginForm) {
-    				var usernameInput = document.loginForm.username;
-    				if (usernameInput) {
-    					usernameInput.focus();
-    				}
-    			}
-    			return;
-    		}
-
-        	//检查用户输入
-    		function checkLogin(){
-    			if(checkUsername() && checkPassword()){
-             alert("登陆成功");
-             location.href ='../index.html?usr=' +document.loginForm.username.value;
-    				 return true;
-    			 }else{return false;}
-    		}
-
-    	</script>
-
 </head>
 
 <body>
@@ -77,10 +31,10 @@
 <input type="text" id="username">
 </div>
 <div>
-<span>密  &nbsp;&nbsp;码：</span>
+<span>密&nbsp;&nbsp;&nbsp;码：</span>
 <input type="password" id="password">
 </div>
-<botton  onclick="login()" class="button button2">登录</botton>
+<button  onclick="login()" class="button button2">登录</button>
 </body>
 <script type="text/javascript">
 function login(){
@@ -95,7 +49,7 @@ function login(){
 //检查登录用户名
 function checkUsername(){
   var username = document.getElementById('username').value;
-  if((username=='DC')||(username=='CG')||((username.value))){
+  if((username=='DC')||(username=='CG')||((username=='JT'))){
     return true;
   }else{
     alert("请输入正确用户名");
@@ -105,7 +59,7 @@ function checkUsername(){
 //检查登录密码
 function checkPassword(){
   var password = document.getElementById('password').value;
-  if(password.value=="1234"){
+  if(password=="1234"){
     return true;
   }else{
     alert("请输入正确密码");
