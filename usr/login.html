@@ -77,7 +77,7 @@
 <input type="text" id="username">
 </div>
 <div>
-<span>密  &nbsp;码：</span>
+<span>密  &nbsp;&nbsp;码：</span>
 <input type="password" id="password">
 </div>
 <botton  onclick="login()" class="button button2">登录</botton>
@@ -94,7 +94,7 @@ function login(){
 }
 //检查登录用户名
 function checkUsername(){
-  var username = document.loginForm.username;
+  var username = document.getElementById('username').value;
   if((username=='DC')||(username=='CG')||((username.value))){
     return true;
   }else{
@@ -104,7 +104,7 @@ function checkUsername(){
 }
 //检查登录密码
 function checkPassword(){
-  var password = document.loginForm.password;
+  var password = document.getElementById('password').value;
   if(password.value=="1234"){
     return true;
   }else{
