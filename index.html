@@ -26,6 +26,15 @@
 <div><img class="fullimg" src="pic/yao.png"/></div>
 <br />
 
+<script type="text/javascript">
+var p="<div><img class='fullimg' src='../pic/"
+var s=localStorage.username
+if (s.length>1){
+document.write(p+s+".jpg' width=50% /></div>")
+}
+</script>
+
+
 <div align="center">
     <p>当前用户：<span id="username"></span></p>
     <p><button class="button button2" onclick="login()">登录</button></p>
