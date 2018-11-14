@@ -9,7 +9,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="pic/mystyle.css">
+    <link rel="stylesheet" type="text/css" href="../pic/mystyle.css">
         <title>药不能停</title>
 </head>
 
@@ -23,41 +23,7 @@
 </div>
 <br />
 
-<script type="text/javascript">
-var p="<div><img class='fullimg' src='pic/"
-var s=localStorage.username
-if (s=='DC' || s=='CG' || s=='JT'){
-document.write(p+s+".jpg' width=50% /></div>")
-}
-else {
-  document.write(p+"yao.png'/></div>")
-}
-</script>
-
-
-<div align="center">
-    <p>当前用户：<span id="username"></span></p>
-    <p><button class="button button2" onclick="login()">登录</button></p>
-</div>
-
 <br />
-<div align="center">
-<a href="sex/sex.html" class="button button2">随便看看</a>
-</div>
-
-</body>
-<script type="text/javascript">
-var username = document.getElementById("username");
-window.onload = function(){
-    if(localStorage.username.length>1){
-      if (localStorage.username=='DC') {username.innerHTML = "大川";}
-      if (localStorage.username=='CG') {username.innerHTML = "陈广";}
-      if (localStorage.username=='JT') {username.innerHTML = "军焘";}
-    }
-}
-function login(){
-    var Url = "usr/login.html";
-    location.href = Url;
-}
-</script>
+<div><img class="fullimg" src="../pic/body.png"/></div>
+<br />
 </html>
