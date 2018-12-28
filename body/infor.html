@@ -32,10 +32,24 @@ function getParams(key) {
     return null;
 };
 var s=getParams("opt");
+var t01="<div align='center'>";
+var t02="</div>";
+var ca="钙:";
+var cad="1000mg"
+var ca0="补钙其他好处："
+var ca1="补钙过量危害："
+var ca2="补钙与药物冲突："
 if (s == 1) {
-document.write("<div align='center'>钙：1000mg</div>")
-document.write()
-document.write()
+  var x=ca;
+  var xd=cad;
+  var x0=ca0;
+  var x1=ca1;
+  var x2=ca2;
+document.write(t01+x+xd+t02+t01+x0+t02+t01+x1+t02+t01+x2+t02);
+document.write("<div align='center'>钙：1000mg</div>");
+document.write("<div align='center'>补钙其他好处：</div>");
+document.write("<div align='center'>补钙过量危害：</div>");
+document.write("<div align='center'>补钙与药物冲突：</div>");
 }
 </script>
 </div>
