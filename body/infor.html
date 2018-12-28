@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="药不能停" />
+    <meta name="description" content="药不能停" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../pic/mystyle.css">
+        <title>药不能停</title>
+</head>
+
+<body>
+  <div class="icon-bar">
+  <a href="../index.html"><i class="fa fa-home"></i></a>
+  <a class="active" href="../body/body.html"><i class="fa fa-user-md"></i></a>
+  <a href="#"><i class="fa fa-heartbeat"></i></a>
+  <a href="#"><i class="fa fa-calendar"></i></a>
+  <a href="../usr/about.html"><i class="fa fa-male"></i></a>
+</div>
+<br />
+
+
+<script type="text/javascript">
+function getParams(key) {
+    var reg = new RegExp("(^|&)" + key + "=([^&]*)(&|$)");
+    var r = window.location.search.substr(1).match(reg);
+    if (r != null) {return unescape(r[2]);}
+    return null;
+};
+var s=getParams("opt");
+if (s == 1) {
+document.write("<div align='center'>钙：1000mg</div>")
+document.write()
+document.write()
+}
+</script>
+</div>
+</body>
+</html>
