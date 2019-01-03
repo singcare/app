@@ -32,17 +32,17 @@ function getParams(key) {
     return null;
 };
 var s=getParams("opt");
-var t01="<div align='center'>";
-var t02="</div>";
-var ca="钙:";
+var t01="<tr><th>";
+var t02="</td></tr>";
+var ca="钙:</th><td>";
 var cad="1000mg"
-var ca0="Risk groups: Postmenopausal women, Amenorrheic women, the female athlete triad,\
+var ca0="Risk groups</th><td>Postmenopausal women, Amenorrheic women, the female athlete triad,\
 lactose intolerance, cow’s milk allergy, Vegetarians"
-var ca1="Symptoms: numbness, tingling in the fingers, muscle cramps, convulsions,\
+var ca1="Symptoms</th><td>numbness, tingling in the fingers, muscle cramps, convulsions,\
 lethargy, abnormal heart rhythms"
-var ca2="Benefits: Increase Bone health, 100mg+400iu VD3 prevent  colorectal adenomas,\
+var ca2="Benefits</th><td>Increase Bone health, 100mg+400iu VD3 prevent  colorectal adenomas,\
 lower blood pressure and risk of hypertension, reduce risk of Preeclampsia"
-var ca_infor = t01+ca+cad+t02+t01+ca0+t02+t01+ca1+t02+t01+ca2+t02;
+var ca_infor = "<table border='1'>"+t01+ca+cad+t02+t01+ca0+t02+t01+ca1+t02+t01+ca2+t02;
 if (s == 1) { var x=ca_infor;  document.write(x);}
 if (s == 2) { var x=ca_infor;  document.write(x);}
 if (s == 3) { var x=ca_infor;  document.write(x);}
